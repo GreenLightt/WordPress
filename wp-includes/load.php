@@ -6,7 +6,7 @@
  */
 
 /**
- * Return the HTTP protocol sent by the server.
+ * 返回服务器使用的 HTTP 协议
  *
  * @since 4.4.0
  *
@@ -980,7 +980,7 @@ function is_ssl() {
 }
 
 /**
- * 转换其他单位的数据，为以byte为单位的数据; 
+ * 转换其他单位的数据，为以byte为单位的数据;
  * 例如，将 128M 转换为 128 * 1024 * 1024 字节
  *
  * @since 2.3.0
@@ -1009,7 +1009,7 @@ function wp_convert_hr_to_bytes( $value ) {
 }
 
 /**
- * Determines whether a PHP ini value is changeable at runtime.
+ * 判断一个 php.ini 中的配置值在运行时可变
  *
  * @since 4.6.0
  *

@@ -32,7 +32,7 @@ function wp_initial_constants() {
     $current_limit     = @ini_get( 'memory_limit' );
     $current_limit_int = wp_convert_hr_to_bytes( $current_limit );
 
-    // Define memory limits.
+    // 内存限制的常量定义
     if ( ! defined( 'WP_MEMORY_LIMIT' ) ) {
         if ( false === wp_is_ini_value_changeable( 'memory_limit' ) ) {
             define( 'WP_MEMORY_LIMIT', $current_limit );
@@ -43,6 +43,7 @@ function wp_initial_constants() {
         }
     }
 
+    // 最大内存限制的常量定义
     if ( ! defined( 'WP_MAX_MEMORY_LIMIT' ) ) {
         if ( false === wp_is_ini_value_changeable( 'memory_limit' ) ) {
             define( 'WP_MAX_MEMORY_LIMIT', $current_limit );
@@ -53,7 +54,7 @@ function wp_initial_constants() {
         }
     }
 
-    // Set memory limits.
+    // 设置内存限制
     $wp_limit_int = wp_convert_hr_to_bytes( WP_MEMORY_LIMIT );
     if ( -1 !== $current_limit_int && ( -1 === $wp_limit_int || $wp_limit_int > $current_limit_int ) ) {
         @ini_set( 'memory_limit', WP_MEMORY_LIMIT );
@@ -65,7 +66,7 @@ function wp_initial_constants() {
     if ( !defined('WP_CONTENT_DIR') )
         define( 'WP_CONTENT_DIR', ABSPATH . 'wp-content' ); // no trailing slash, full paths only - WP_CONTENT_URL is defined further down
 
-    // Add define('WP_DEBUG', true); to wp-config.php to enable display of notices during development.
+    // 在 wp-config.php 中添加 define('WP_DEBUG', true); 开启调试信息的显示
     if ( !defined('WP_DEBUG') )
         define( 'WP_DEBUG', false );
 
