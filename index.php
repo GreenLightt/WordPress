@@ -7,7 +7,7 @@
  */
 
 /**
- * Tells WordPress to load the WordPress theme and output it.
+ * 告诉 WordPress 是否使用主题；如果不使用主题，则页面显示一片空白。
  *
  * @var bool
  */

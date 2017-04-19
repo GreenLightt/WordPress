@@ -19,26 +19,26 @@
  */
 
 // ** MySQL settings - You can get this info from your web host ** //
-/** The name of the database for WordPress */
+/** WordPress 数据库的名称 */
 define('DB_NAME', 'database_name_here');
 
-/** MySQL database username */
+/** WordPress 数据库的用户名 */
 define('DB_USER', 'username_here');
 
-/** MySQL database password */
+/** WordPress 数据库的用户密码 */
 define('DB_PASSWORD', 'password_here');
 
-/** MySQL hostname */
+/** MySQL 主机 */
 define('DB_HOST', 'localhost');
 
-/** Database Charset to use in creating database tables. */
+/** 创建数据表时默认的文字编码 */
 define('DB_CHARSET', 'utf8');
 
-/** The Database Collate type. Don't change this if in doubt. */
+/** 数据库整理类型，如不确定请勿更改 */
 define('DB_COLLATE', '');
 
 /**#@+
- * Authentication Unique Keys and Salts.
+ * 身份密钥设定
  *
  * Change these to different unique phrases!
  * You can generate these using the {@link https://api.wordpress.org/secret-key/1.1/salt/ WordPress.org secret-key service}
@@ -58,19 +58,18 @@ define('NONCE_SALT',       'put your unique phrase here');
 /**#@-*/
 
 /**
- * WordPress Database Table prefix.
+ * WordPress 数据表前缀
  *
- * You can have multiple installations in one database if you give each
- * a unique prefix. Only numbers, letters, and underscores please!
+ * 如果您有在同一数据库内安装多个 WordPress 的需求，请为每个 WordPress 设置不同的表前缀。
+ * 前缀名只能为数字、字母加下划线
  */
 $table_prefix  = 'wp_';
 
 /**
- * For developers: WordPress debugging mode.
+ * 开发者专用： WordPress 调试模式
  *
- * Change this to true to enable the display of notices during development.
- * It is strongly recommended that plugin and theme developers use WP_DEBUG
- * in their development environments.
+ * 修改值为 true, WordPress 将显示所有开发过程中的提示。
+ * 强烈建议插件开发者在开发环境中启用本功能。
  *
  * For information on other constants that can be used for debugging,
  * visit the Codex.
@@ -81,7 +80,7 @@ define('WP_DEBUG', false);
 
 /* That's all, stop editing! Happy blogging. */
 
-/** Absolute path to the WordPress directory. */
+/** WordPress根目录的绝对路径 */
 if ( !defined('ABSPATH') )
 	define('ABSPATH', dirname(__FILE__) . '/');
 

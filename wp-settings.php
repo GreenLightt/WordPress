@@ -1,7 +1,6 @@
 <?php
 /**
- * Used to set up and fix common variables and include
- * the WordPress procedural and class library.
+ * 用于设置公共变量，加载WP程序和类库。
  *
  * Allows for some configuration in wp-config.php (see default-constants.php)
  *
@@ -15,7 +14,7 @@
  */
 define( 'WPINC', 'wp-includes' );
 
-// Include files required for initialization.
+// 引入初始化需要的文件
 require( ABSPATH . WPINC . '/load.php' );
 require( ABSPATH . WPINC . '/default-constants.php' );
 require_once( ABSPATH . WPINC . '/plugin.php' );
