@@ -2465,7 +2465,7 @@ function wp_get_users_with_no_role() {
 }
 
 /**
- * Retrieves the current user object.
+ * 检索当前的用户对象
  *
  * Will set the current user, if the current user is not set. The current user
  * will be set to the logged-in person. If no user is logged-in, then it will
@@ -2491,7 +2491,7 @@ function _wp_get_current_user() {
 			return $current_user;
 		}
 
-		// Upgrade stdClass to WP_User
+        // 将 $current_user 变量从 stdClass 的object对象变成 WP_User对象
 		if ( is_object( $current_user ) && isset( $current_user->ID ) ) {
 			$cur_id = $current_user->ID;
 			$current_user = null;
@@ -2499,7 +2499,7 @@ function _wp_get_current_user() {
 			return $current_user;
 		}
 
-		// $current_user has a junk value. Force to WP_User with ID 0.
+        // $current_user 是一个无效对象，令 WP_User 为 ID 为 0 的对象
 		$current_user = null;
 		wp_set_current_user( 0 );
 		return $current_user;

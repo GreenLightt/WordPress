@@ -84,5 +84,5 @@ define('WP_DEBUG', false);
 if ( !defined('ABSPATH') )
 	define('ABSPATH', dirname(__FILE__) . '/');
 
-/** Sets up WordPress vars and included files. */
+/** 设置 WordPress 变量，同时引入需要的文件 */
 require_once(ABSPATH . 'wp-settings.php');

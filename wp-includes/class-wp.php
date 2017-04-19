@@ -594,7 +594,7 @@ class WP {
 	}
 
 	/**
-	 * Set up the current user.
+     * 确认设置当前用户对象
 	 *
 	 * @since 2.0.0
 	 * @access public
@@ -717,7 +717,7 @@ class WP {
 	}
 
 	/**
-	 * Sets up all of the variables required by the WordPress environment.
+     * 设置 WordPress 环境需要的所有变量
 	 *
 	 * The action {@see 'wp'} has one parameter that references the WP object. It
 	 * allows for accessing the properties and methods to further manipulate the

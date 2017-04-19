@@ -52,7 +52,7 @@ endif;
 
 if ( !function_exists('wp_get_current_user') ) :
 /**
- * Retrieve the current user object.
+ * 检索当前用户对象
  *
  * Will set the current user, if the current user is not set. The current user
  * will be set to the logged-in person. If no user is logged-in, then it will

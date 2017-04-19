@@ -36,7 +36,7 @@ require( ABSPATH . WPINC . '/version.php' );
  */
 global $blog_id;
 
-// Set initial default constants including WP_MEMORY_LIMIT, WP_MAX_MEMORY_LIMIT, WP_DEBUG, SCRIPT_DEBUG, WP_CONTENT_DIR and WP_CACHE.
+// 初始化常量, 包括 WP_MEMORY_LIMIT, WP_MAX_MEMORY_LIMIT, WP_DEBUG, SCRIPT_DEBUG, WP_CONTENT_DIR and WP_CACHE;
 wp_initial_constants();
 
 // Check for the required PHP version and for the MySQL extension or a database drop-in.
@@ -46,7 +46,7 @@ wp_check_php_mysql_versions();
 @ini_set( 'magic_quotes_runtime', 0 );
 @ini_set( 'magic_quotes_sybase',  0 );
 
-// WordPress calculates offsets from UTC.
+// WordPress 设置 UTC
 date_default_timezone_set( 'UTC' );
 
 // Turn register_globals off.

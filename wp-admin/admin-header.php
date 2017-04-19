@@ -207,7 +207,9 @@ if ( current_user_can( 'customize' ) ) {
 ?>
 
 <div id="wpwrap">
-<?php require(ABSPATH . 'wp-admin/menu-header.php'); ?>
+<?php 
+require(ABSPATH . 'wp-admin/menu-header.php');
+?>
 <div id="wpcontent">
 
 <?php
